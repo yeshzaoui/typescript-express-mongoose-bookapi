@@ -1,7 +1,6 @@
 import {BookRepository} from '../../repositories/bookRepository';
 import {IBookBusiness} from '../interfaces/bookBusiness';
 import {IBookModel} from '../../models/interfaces/bookModel';
-import {BookModel} from '../../models/impls/bookModel';
 
 export class BookBusiness implements IBookBusiness {
 

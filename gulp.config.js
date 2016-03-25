@@ -4,7 +4,7 @@ module.exports = function () {
   var config = {
 
     nodemonfig: {
-      script: dest + 'index.js',
+      script: dest + 'src/index.js',
       ext: 'ts',
       env: {
         PORT: 3000
