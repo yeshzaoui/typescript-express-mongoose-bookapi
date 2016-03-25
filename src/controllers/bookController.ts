@@ -41,7 +41,7 @@ export class BookController implements IBaseController<BookBusiness>{
             var bookBusiness = new BookBusiness();
             bookBusiness.delete(_id, (error, result) => {
                 if (error) res.send({ "error": "error" });
-                else res.send(result);
+                else res.send({ "success": "success" });
             });
         } catch (e) {
             console.log(e);

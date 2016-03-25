@@ -1,5 +1,6 @@
 import * as express from 'express';
 import {BookRoute} from '../bookRoute';
+import {AuthorRoute} from '../authorRoute';
 
 var app = express();
 
@@ -9,6 +10,8 @@ export class BaseRoute {
             res.send('Welcome to my API');
         });
         app.use('/', new BookRoute().routes);
+        app.use('/', new AuthorRoute().routes);
+
         return app;
     }
 }
