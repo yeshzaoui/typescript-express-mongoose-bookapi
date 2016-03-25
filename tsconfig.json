@@ -1,0 +1,52 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./built/",
+        "sourceMap": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings/browser",
+        "typings/main",
+        "typings/browser.d.ts"
+    ],
+    "buildOnSave": true,
+    "atom": {
+        "rewriteTsconfig": true,
+        "formatOnSave": true
+    },
+    "files": [
+        "src/app/business/impls/bookBusiness.ts",
+        "src/app/business/interfaces/base/baseBusiness.ts",
+        "src/app/business/interfaces/bookBusiness.ts",
+        "src/app/business/interfaces/common/readBusiness.ts",
+        "src/app/business/interfaces/common/writeBusiness.ts",
+        "src/app/models/impls/bookModel.ts",
+        "src/app/models/interfaces/bookModel.ts",
+        "src/app/repositories/base/baseRepository.ts",
+        "src/app/repositories/bookRepository.ts",
+        "src/app/repositories/interfaces/common/readRepository.ts",
+        "src/app/repositories/interfaces/common/writeRepository.ts",
+        "src/app/schemas/bookSchema.ts",
+        "src/config/Constants/urls.ts",
+        "src/config/middlewares/base/middlewareBase.ts",
+        "src/config/middlewares/methodOverride.ts",
+        "src/config/routes/base/baseRoute.ts",
+        "src/config/routes/bookRoute.ts",
+        "src/controllers/bookController.ts",
+        "src/controllers/interfaces/base/baseController.ts",
+        "src/controllers/interfaces/common/readController.ts",
+        "src/controllers/interfaces/common/writeController.ts",
+        "src/index.ts",
+        "typings/main.d.ts"
+    ]
+}
